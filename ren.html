@@ -4,9 +4,349 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rent- NIYO HAIR AND BEAUTY</title>
-  <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="./style.css">
+
+  	<!-- Box Icon LINK-->
+  	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+	<!-- FONT AWESOME LINK -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+	<div class="header-w">
+		<header>
+			<div class="container">
+				<nav class="header-nav " >
+					<i class="fas fa-bars" id="check"></i>
+					<div class="logo-wrapper">
+						<img src="./img/NHB_logo.avif" alt="Logo">
+					</div>
+					<ul class="nav-links rule">
+						<li>
+							<a href="#" class="nav-links">Book</a>
+						</li>
+						<li>
+							<a href="#" class="nav-links">Shop</a>
+						</li>
+						<li>
+							<a href="./ren.html" class="nav-links">Rent</a>
+						</li>
+						<li>
+							<a href="#" class="nav-links">Learn</a>
+						</li>
+					</ul>
+					<div class="right-nav " >
+						<div class="right-nav-links">
+							<div class="rule">
+								<a  href="">GBP &#163; | United Kingdom rule</a>
+							</div>
+	
+							<!-- ICONS -->
+							<a href="#">  
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAd5JREFUSEu11cvLTWEUx/HPGxnIpSiXiZAwcIuSAQpFL2XqUgxIURhQBv4AMiEhDCgk5Q+Q0VsImSAlopTIgFwi9+uz6nl1HO/e5xnssya7zn7O+j5rrd9v7R5djp4u51cHmIB1WInZ+SJ3cAkX8LzkcgMBRuAcVtck+I2L2IRPdaB2wFDcwgx8xUkcxpOcZDJ2YQuG5LOL8L0K0g44iw14hhV4UPHHWbicLjAeB7G7BDAT9/Aj9Xk+ot91sRhX8A2T8GKgw60VHMF2HMWOkgHiPNYnyF7s7wR4jCm5//cLAUvQh2vpGRX9F60VfEQMeRB+FQJGpWpf4w1GdwK8x3AMQ8BKIs5+wCuM6QS4mw01L3ngdkn2pKQFSW03c5uWdQIcSKbZgxPYVgg4kzyyMbUnBLKzE2AqHuJnoUzDYFdz0sqq2412Ktv/KZYnCT6qqGRONtrY7PatJUaLM62r4guO41B2dryPKmNVbMbgnDRmEK6PYdfKtP/lyGygVTVzeJd20b7U0rWYm12/FPH7P1G3ridml/Yids/nrK4bOIa3CB+E0WKdhwpDSeGJv9HEBycg1zEdsQ0W4mU/oQlA5AqThaKm5fmcbhoQ+cal9b4mfz8abVGtJ5tqUSWk64A/OxFWGSrrSC8AAAAASUVORK5CYII="/>
+							</a>
+							
+							<a href="#"> 
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbVJREFUSEvFk79LW1EUx7/nJrqq1A7dYu59L0MWwa7FsYtCoIIuLm4uDm11dCkUhFIphf4J4iK2Spf+AwpFOhSH5J44BUWoDq0QIuSdkmhCEl/eDS8J3vGecz6fc38cwpAXDZmPngTGmFkFvBcgW2+I6LeIbDDzkatBp8DXekmIdmrYDlggQI6ZD6MkkYJUKjU+mkyeCTARChG5KFcqulQqlbtJIgW+1jkh2o/qUICXzPwjruCNEH1wCF4z83YsgTFmnoCDyIckmrPWfo8lSKfTYwmlGMBkF8ClSiS8fD7/L5agVuRrvShEuyGAgEReFYrFr7F/UaPQ9/0XEgRbALIEVIXoVETWmfm47zlwAVxx56C5AK54V4Ex5imJvIVSMxCZBvCkA3YFkV9C9FMp9bFQKPwJk4UKjDHLBHwGMObq8D5+LcAKM3/rzH8g8DxvDSKfegS3pxEtWGv3WjfbBJlMZiqoVi2ARCwBcENKTbVeV5vAM+YLgNWY8Lsyok1r7bsGo12g9TmInvUlAE4s8/NwgTG3AEb6FPy1zM3P0XlF0ie8Xm6Zm9zHG7RBnKT+5oMCdeP8B5Dchxk78qo3AAAAAElFTkSuQmCC"/>
+							</a>
+							
+							<a href="#">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVNJREFUSEvtlT9LglEYxc9jLolrBdL4XC+8LUIELkEtfYLmGhKisb29rbWGgtr7AG1FBG0RUvHmfVQCHRqaIgj1vTcUiRTt1VQi6Y6X85wf53D/EEa8aMT+GCOAYj4HsDSkyi6MyHLd67MixeyGZN6wMSIN798DTMZi8Ww2+6aYywASXdKVjcis53nxaqXy+lUTmsAB8yJyo5Q6hnPrnQAEHOVEMsycJuC6LwCcOzD5/BYzTxFwB2C6DVKaiEZTvu+/MPMJAWv9AYAaiBaMMbda60QQBIcRIO0AS8BVNQg2i8XiczKZXHTWXrYnDK2oeQKeItau+IVCrlNFSqkUnDsDMPMjQHPonYB9C+yJSKm+p7XWtlbbBtEGgGgneE8JBrkX/4DQ9sazonsAXmj23gQPRmSu5TVl5lUCdgFwbx5dVM49OqIdETltAQxk+s3w3/+TPwCJJ54ZXwXMdwAAAABJRU5ErkJggg=="/>
+							</a>
+						</div>						
+					</div>
+				</nav>
+			</div>
+		</header>
+	</div>
+
+	<main>
+		<div class="main-cont">
+			<div class="cont-w">
+				<div class="container">
+					<div class="text-wrapper">
+						<div class="main-text-w">
+							<div class="h2-text">
+								<h2>
+									We are using technology to support you as hairstylists
+								</h2>
+							</div>
+								
+								
+							<div class="p-text">
+								<p>
+								Rent, Learn, and Thrive with Cutting-Edge Hair Tech starting at just £55 per day, we give you the tools to deliver quality services to your clients
+								</p>
+							</div>
+							<ul>
+								<li>Build your clientele with our Chair Rentals.</li>
+								<li>Level up your Hairstyling game with Black Hair Boss Academy.
+								</li>
+								<li>Fuel your artistry with professional-grade tools & Products.</li>
+							</ul>
+							<button class="rent-btn">
+								<a href="#">
+								 Rent a Chair
+								</a>
+							</button>
+						</div>
+						<div class="img-w">
+							<img src="./img/chair.svg" alt="chair-image">
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+
+		<div class="offer-section">
+			<section class="container">
+				<div class="inline-section">
+					<div class="inline-w">
+						<div class="h2-inline-text">
+							<h2>
+								We also offer VTCT Accrediated Education for hairstylists.
+							</h2>
+						</div>
+
+
+						<div class="flex-section">
+							<div class="img-inline">
+								<img src="https://www.niyohairandbeauty.com/cdn/shop/files/pic.png?v=1705944455&width=1000" alt="">
+							</div>
+			
+							<div class="expert-inline">
+								<div class="h3-inline">
+									<h3>
+										Our expert stylists have been trained to train others.
+									</h3>
+								</div>
+								
+				
+								<div class="p-inline">
+									<p>
+										Learn from experienced VTCT-approved tutors and gain practical experience through our structured training program. 
+									</p>
+								</div>
+								<div class="ul-inline">
+									<ul>
+										<li>Stand out from the competition with recognized expertise.</li>
+											<li>Network with fellow stylists.</li>
+										<li>Master new techniques.</li>
+									</ul>		
+								</div>
+								<div class="btn-inline">
+									<button>
+										<a href="#">Register for Black Hair Boss Academy  &#8594;</a>
+									</button>
+							
+								</div>
+							</div>
+						</div>
+
+						
+					</div>						
+				</div>
+			</section>
+		</div>
+
+		<section class="ssection">
+			<div class="container">
+				<div class="contt">
+					<div class="section2">
+						<div class="h3-section">
+							<h3>
+								State of the Art Facility
+							</h3>
+						</div>
+						<div class="p-section">
+							<p>
+								Niyo Hair and beauty saloon isn't just a workplace; it's a haven for stylists to thrive. It's a space that nurtures their creativity, fuels their ambition, and empowers you to deliver exceptional services to your clients.
+							</p>
+	
+							<div class="rent-bttn">
+								<a href="#">
+									<button>Rent a Chair  &#8594; </button>
+								</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="container">
+					<div class="img-wraps">
+						<div class="box">
+							<img src="./img/wash_area_2.svg" alt="img">
+						</div>
+						<div class="box">
+							<img src="./img/wash_area_1.svg" alt="img">
+						</div>
+						<div class="box">
+							<img src="./img/wash_area.svg" alt="img">
+						</div>
+					</div>
+				</div>
+				
+				<div class="shop">
+					<h2>
+						Shop our Hair & Beauty Products
+					</h2>
+				</div>
+	
+				<div class="container">
+					<div class="img-beauty">
+						<div class="box1">
+							<img src="./img/image.svg1.svg" alt="img">
+							<img src="https://www.niyohairandbeauty.com/cdn/shop/products/Untitled-design-20.png?v=1647109693&width=823" alt="img">
+							
+						</div>
+						
+						
+						<div class="box2">
+							<img src="https://www.niyohairandbeauty.com/cdn/shop/collections/Untitled_design_24.png?v=1648039795&width=750" alt="img">
+						</div>
+						
+					</div>
+					<div class="price">
+						<div class="price-w">
+							<a href="">
+								<h4>2 in 1 Hair Steamer & Facial Steamer - Compact &Portable
+								</h4>
+							</a>
+
+							<p class="strike-through">
+								<span>&#163;119.99 GBP </span> &#163;71.99 GBP
+							</p>
+
+						
+							
+						</div>
+						<div class="hair-w">
+							<a href="#">HAIR PRODUCTS &#8594;</a>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</section>
+	</main>
+
+		
+		
+
+
+
+	<footer>
+		<section class="footer-w">
+			<div class="container">
+				<div class="footer-sub">
+					<h1>Subscribe to our emails</h1>
+					<p>Join our email list for exclusive offers and the latest news.</p>
+	
+				</div>
+				
+
+				<div class="btn-w">
+					<div class="email-btn">
+						<input 
+							type="email"
+							name="email" 
+							id=""  
+							placeholder="Email"/>
+					</div>
+				</div>	
+		 	</div>
+		</section>
+
+		<section class="footer-wrapper">
+			<div class="container">
+				<div class="footer-navs">
+					<div class="footer-logo">
+						<img src="./img/trans-Vector (1).svg" alt="logo">
+					</div>
+					<nav class="nav-menu">
+						<ul class="footer-links">
+							<h2>Menu</h2>
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#">Terms Of Use</a>
+							</li>
+							<li>
+								<a href="#" class="contact">Contact</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Refund policy</a>
+							</li>
+							<li>
+								<a href="#">Shipping Policy</a>
+							</li>
+						</ul>
+						
+					</nav>
+					
+				</div>
+				<div class="footer-sm">				
+					<div class="follow-btn">
+						<button>
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAr5JREFUSEvVlctPGlEUxr9zBqcMWijxUWPTVhRTYBZuTBpp0sRuGtA0ffwB/fcaV+2iYJo0Nn24cgMESWMBK4lFoqIWYYLDvc1MqgHKqwvTdJZzzny/c75zzx3CFT90xfr4N4DtVGqWmO9CiHFmlg0hSsycm9X1XavjfCYzbZrmtMI8IYQgx9BQCcDOdCCQb3ekpYN8Pu+UlcpDyXyro3VE+yBiC9wlXmBN++zz+YyL+CVASkm5TCYKKScgpQGiL+xylUzTlFyv3wTzAwjhtD/8HRequu9wOAiGMSmECAO4BqL9mWAwTkTSSr0EfE0mAw5FWRRAvWqar+fn58+aq0wkEsMjqvoYpgltdHRtamqq2hwvFovDZ4eHTwGoEvjk1/VvLYBcOv1EAqPNwb89YblE4p50OMISKPp1Pd4CyGcyL4UQPGyaq5Nt1Q8KOtzedh/X6y8kUc0fCr3qCKiY5mq7PYMCspubHmjacwLOZnR9tQWQTaVWwDw+pKof78zNZQcVbc7LJ5MBoSiLAHZndf19C+B7Oh0ygftgNjSP5037EPsB9/b2XLVy+Zk1ZGZe9wWDOy0AKSXnt7ZWrEFDylP19DR2Oxyu9RO24oWNDa3udkdB5JbAD7+ur/2xB3ZioaDVTk6iCpF7UIhd+dFRxBIH8wk7nbGOi3ZBtKo593iWJXCdgJ9OrzfWzS5L3CiXrdwRW7xYjPmWli63uMWiZivslr3eCITwEFBxer1v2yHN4lKIY+XgIN4u3hVgX2jr604xORntBGkWF8CRH4iTrtc7zavndW1BGmNjEWK+cdFJuVxmDYhYtpCUBz7DWKOFhfNuh6Hv/0Cm02q20YiSongFUCEiJildICqVq9V3Cz3Ee1rUXJENEWLZ6sR+P6D4wAD7hk6n1R3gkQDOZ0KhD0TUGGRH+lo0iEivnP8f8Av1UU0oYOclHgAAAABJRU5ErkJggg=="/>Follow on shop
+						</button>
+					</div>
+					<span class="social-media">
+						<a href="">
+							<span>
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAoFJREFUSEu1ls9PE1EQx2dm14hKjJGEoIKl3QJlXxdqRAkejCaYeK/Rg5G/hT9GD3IweDCePJgoidqopbvb4vLDognRAwlGCBY6Y5ZYstt2SzGwp82bH5/5vjfvB8Ixf3jM+aElYGZmRhvPZGJ/trd7CeC8aFonAQgB/BaAddK077GhoTIiclShkQAvn+8FXZ8ggM6WKol+aSJz/aa51syvKcBznCsEkGl3+gRAADGXNE27PqYBcNjkwYQ6wLuYUm5wLARYLBT6kGgysnKibWH+0NnVtdbT07Pp+y3Z9jVATPv/vhJifpmwrB+1HPuAXC534lxHRxYRTzUDEBHz5uasMTa2EbQHAXvjRBuJVGq2tvD7gIX5+ZSuaRNR1RPRcnx4+HXNvloqXaxWq92MeAlEuuviXhlKrfpj+4Al150Ekb7IdhP5mEin8759pVjsZ+bbUb4i8iWZTr8NARZd9wGKnI4KYoD3A0o5vt1zHEUA11v4rg8o9TwMsO0pRNSOAgAAFUOpJyGA57qPSEQPAghxK26aT1vthxXHucsAF+pacyeh1OPwGth2FhDPBh0FcSt5AGDZce4LwJlQEcwbhmU9CwGWXfemiBiHUeCfVVeVmmqi0DOUehMCfC2V4tVq9dYRrUFjm05PT9PDbPYeEYXl/iO23UWB6Qkp2Gu/fL6XdP1OMxXtAmR390VydPRnLUfDYbfiOOMMYNZD2gFoAJ/7lfpU11GN9S4WizeQeShoORDAXDAsK1efLfLCWfU8Y6dSGQeAk35QFECYtwBgLmlZ35pNbcsrU0S0sm0P7hLFmLk8aFnFvbNoYSElzJehUinHR0a8/7oyW+3ew9iO/VXxF8dnFij+1cKHAAAAAElFTkSuQmCC"/>								
+							</span>
+
+							<span>
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAxxJREFUSEvFld9vE0cQx2dmz06suOAADZKhafxL+G6LpUhGvBG3SH1piZCqPiDRh/5lIMgTCF6QeEEQkCoQlBZ8yeX8I3FI1FagyCQNJpHs2x10gZNsOAeDFLGv+9357HdmdwZhjxfucXz4MoC1SuWrjXb7OzSMw8g8uptLRlxnz3sBsZiTy+U239d+4KBq23lBdBIRCQFaSus1IPo/DEKIBzXzAQIYYWaNQjzImGatW9sDqFarh4Tn/QyIG/uJbn+dz78apEa2bY/Go9HTWql4h+iGaZrN4FwPYNFxfiDEo3Hm62NStj4WfLVez3hKTSqlOh7RHxGtzwDAalbKO6GAhuP86t8+bVm3uoMzM9ZqtSR5XgIAeEiIjfF8/r/q06dHjEjkRw3wOifllbrjTAuAobSUV/sBzhPR0oRpPggEz8vlkdeRSAmYx3ocIb4AxEXdbm+hYQxnpVx8l4Ejacu6HApYcpzfQYi5TD7/2Bf4N2/Mz//EiHFm/tOIx/9tNpuUiMWSgFhEgM2MZd0Mgi27bklpPZGV8mJfABPZWdP8yxdUyuVUxDBKRDSbMs1n3Q6eVSoppVQJAG5npFz19+pzc742lZHywkAOliqVIih1fH17e6ZYLHa6Acuzs8N6bOycRiznLOvvHYBtT5EQ6V0BCOCkpXzkHwgA6e3tGewDYKXsbKGw47ixsHCKmTMDA9wnTyai0ej37XZ71pyc7EnRSq2W9jqdqZ4U2fYUCpHatQbdDoIikxAjnlKP/SIPNZu0FYslkfmE/8PfLzIzj6ct61JoDeoLC78h4lLWNO8HgnK5PBInKgHRB880lkjcTSaTW4HWf6YMkMxJORNeZNf9BZk3wz7asuuOM/M3rLVGon+Cl9Nd+IbjTDNRJGOa18Id+Dkk+nYf4kCtojv4ysrKqNdqndVKNXKFwr1QgOu6B6NaT2uAl0qIO/kBm50fXLVapzVAfJjoxtF+zc6nBu0acGet+W343W1YAKwrrQUQ7QN4O6yI2WDEQ75Oaf3wWKFQ6duug43PGTiJaHQ+rL1/mZH5sTnwKft77uANFoCUKOQUzFoAAAAASUVORK5CYII="/>								
+							</span>
+
+							<span>
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjpJREFUSEu1lbFv01AQxu/ec6JSBIEBFiQUbNw0eTVLMwASZUBiYgAk/kQ2YEAIBGylC0OlNMVxaOIEJoKqKCQMVUh8h15aR66TFKehnuyne9/vvnfnewhn/OAZ68PcgL1yeUNKaY0SE6Jr5fOvTkpyIQAD8K+Dg+fFYnEwC7IQQIsi0bbpOOX/Bmi47j0GuBkKMnNgCPExWyj8mAaZ20EccFgKQUzUIKJvuLzcsyyrG8LmBhwr8pSUEaBuKvXp1ICoA0QMEBGJSEQEkwGazeYS9/srQHQpCIKloWFs5/P5dhRAAL+DTue9zGTWhRA3RkVP4sAvlVYwnb7NzDLMjIg2bcfx4wBbqRc6RsfW6/Xz+t227d7MI9orl00p5f348YaAaA20gxCQqE11Fr7rPkPEc+M2BNA2OihlObu62pzlIBGgsbOTY8O4O7aH6Aep1Gfbtvvh2kIA33UfAMD1kRhR13KciTmzEKBeqTxG5ssjgGHUrFxuK269UalsMPPhsGPuWWtrLxMPO9/zHgHRlaN2a5tKvY5v9j3vKRBl9LoEaGWVepcYUPe8dSS6Na4B0VvTcX6G319LpWtGKvUwIlizlJpwGQUeGxXtWu1ibzh8Ev6ZhDhMMX/Rs1gA6B63o5spnX5j2/Z+Ygc6MN5JM9sP0TcLhc2TxI+OejKktrtrSSHuMEBqmgADtKxC4YOeRacC6E371eqF7mDggJRXdWcxMzHz9z9CVJVSrX8Jj+uYNPC0cXPfB/OC/gIGBQ4om3l+qwAAAABJRU5ErkJggg=="/>								
+							</span>
+
+							<span>
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkJJREFUSEvdlctrE3EQx2dmNzFpomi1IZbWJN2VhGyTYol4UuxBEQQhYG/+Af5fXnooPXqTKFRyWZSQ7mZp2rQNKFqLj77ShOxvZMWE5v2AXrrH38x8P795/GYRLvjDC9aHSwbgTEbGpaV6v7Kxrrs2vd57yDxLAH4iEkxUeLOy8ul1Ou09I7oTTiQKDY1miZgZSxsbaZk5E0omf/WCbBnGMwS43W4XQpwQkU+SpPfhWGynA7BvGP4jgGVgPmOP552qqvvtIoVC4aZbiBe94Mh8wADf3Ijbs5r20/E7n4G0a1mvhBDkGFiSNn8fH39OpVKnDcFiPq8Q0aNeAIFYR+asqmlbHRk4B9um+RyYAy0CiN8ZoFxlPnADTBLAgz49Kiqatn7e3sxA13VX0Oe7VgV4CkJ4xnofkpRXYjG9KyCXy/l8sryMzFVAHAtAspyNRKNWV4AzRTum+ZIB/GPd3gnyeNYURfnTFeAclkwzhIiPG40eBYSSdDQXi622x3SsCiuXi8gu1wIy3xgFULftbDSZbClPy5g2R7FYnKFa7cko4s4jU+fnVxFRDMzgX6kM4yEDqMNAnFVRr1Te3l1c/NHNv+s2dRpeLpev1w4PF4go0heEuK7E48Wer7vd4Cy83UDgFiMmmHmmVyAz20T0YS4e3+t3gWYGlmVNX7Ht+wJgclBphBBfrk5NfQwGgyeDfFtK5Kzi0sREGABCCDDNzBIi2sBcYcRTwfy1BrCn/V9kg8S7TtEwQaP4XLJf5iipD+v7F5yd3Bk4tEOJAAAAAElFTkSuQmCC"/>
+								
+							</span>
+							
+						</a>
+						
+					</span>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		<hr class="horizontal-rule">
+
+		<section class="colore">
+			<div class="footer-container">
+				<div class="footer-end">
+					<div class="footer-middle">
+						<h6> &copy; 2024, <a href="">NIYO HAIR AND BEAUTY</a></h6>
+					</div>
+					
+        <button>United Kingdom (GBP &#163;)<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAiFJREFUSEvtlLFLG3EUx7/vdwnERVAQ4u/3uyRgwQxChxY7dLGFopv+AaGzdHJu6eZeOoXO0l037VK3loYOhQ4WKiS53+8MCAoOGmruXvuDGKIxuVNx68ENd/e+3897v3vvEe75onv2x39A4gn3jkgp9YmAF4mKNAHMOyYMl1xoD6ClrIHocRp9ipiasXb+EkBKWRZEPwBkQfTcGLObwqgXorVeAPNnAH9i5odhGO5dArgHpdQaAe8AHOTOzsq/j45O0kAeTE6Ot8fGnOE0iNaMMe8vdANtqpVyWSwA2DDWvkwD0EptAKj80+0aa5/1awYAxWJxOoqiPTCPE/NKEIZboyC+lMtMtAmiE8/zyo1G42AkwH3UWlfA7LI67kTRbKvVOrwOks/npzKe9wvABIgqxpiPV+OGTrLWehPMy+hruatiLeU2iBZBtGWMWbkuiaGAQqEwEUeRy26KgVVr7Yd+A6XUKgFVAIfC82abzebxjQAu2Pf9RY7jbQBtEmIuCIL97vsZjuOfAHIkxFIQBDvD/lPisvOVqroKGPhuu8OjlPpGwCMGqtbaV6OaIBFQKpVynfNzl+0MA68FIBhYB7CfyWbn6vV6+06AblfNg/krgA4A4W4S4kkQBLWkOUms4MJAKbVOwBv37Cqw1r5NMh9YFQmCjJbyC4hiY+3TbjWJjNQVOCe3c05zuU4YhqeJzt2AGwHSmiauitsY3XoO7gr7CzXmuBndF54WAAAAAElFTkSuQmCC"/></i></button>
+				</div>
+				
+			</div>
+		</section>
+		
+		
+      
+	</footer>
   
 </body>
 </html>
